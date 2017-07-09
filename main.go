@@ -21,7 +21,7 @@ import (
 
 //!+main
 
-var palette = []color.Color{color.White, color.RGBA{255, 0, 0, 1}, color.RGBA{0,0,255,1}}
+var palette = []color.Color{color.White, color.RGBA{255, 0, 0, 1}, color.RGBA{0, 0, 255, 1}}
 
 const (
 	whiteIndex = 0 // first color in palette
@@ -52,10 +52,10 @@ func main() {
 
 func lissajous(out io.Writer) {
 	const (
-		cycles  = 10     // number of complete x oscillator revolutions
+		cycles  = 10    // number of complete x oscillator revolutions
 		res     = 0.001 // angular resolution
 		size    = 100   // image canvas covers [-size..+size]
-		nframes = 128    // number of animation frames
+		nframes = 128   // number of animation frames
 		delay   = 6     // delay between frames in 10ms units
 	)
 	freq := rand.Float64() * 3.0 // relative frequency of y oscillator
